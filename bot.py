@@ -95,7 +95,7 @@ async def profile_edit(interaction: discord.Interaction, user: discord.User):
                     """, (interaction.guild.id, user.id, selected_field, new_value))
                     conn.commit()
                     await modal_interaction.response.send_message(
-                        f"✅ Updated `{selected_field}` for {user.display_name} to `{new_value}`", ephemeral=False
+                        f"✅ Updated `{selected_field}` for {user.display_name} to `{new_value}`", ephemeral=True
                     )
 
             await interaction_dropdown.response.send_modal(EditModal())
