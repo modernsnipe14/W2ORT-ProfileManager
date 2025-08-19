@@ -37,9 +37,9 @@ After=network.target
 
 [Service]
 Type=simple
-User=astrousr
-WorkingDirectory=/home/astrousr
-ExecStart=/home/astrousr/botenv/bin/python /home/astrousr/bot.py
+User=username
+WorkingDirectory=/home/username
+ExecStart=/home/username/botenv/bin/python /home/username/bot.py
 Restart=always
 
 [Install]
